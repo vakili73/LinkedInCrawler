@@ -120,7 +120,8 @@ class LinkedIn:
                 '/html/body/div/div/div/div/div/div/div/div/div/div/div/div/section/ol/li/div/div')
             knownSkillsElements = self.__driver.find_elements_by_xpath(
                 '/html/body/div/div/div/div/div/div/div/div/div/div/div/div/section/div[2]/div')
-
+            
+            ###################### Bug
             if not mainSkillsElements == []:
                 for mainSkill in mainSkillsElements:
                     print(mainSkill.text)
@@ -128,6 +129,7 @@ class LinkedIn:
             if not knownSkillsElements == []:
                 for knownSkill in knownSkillsElements:
                     print(knownSkill.text)
+            ###################### Bug
             
             return results
 
